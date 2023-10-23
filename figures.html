@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figures</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<header>
+    <h1>Geometric shapes</h1>
+    <p>my first javascript project</p>
+</header> 
+<section>
+    <div class="square">
+        <h2>Square</h2>
+        <form>
+            <label for="InputSquare">
+                Write the length of one of th sides of your Square:
+            </label>
+            <input id="InputSquare" type="number">
+            <button class="button button1" type="button" onclick="calculatePerimeterSquare()">Calcular el perímetro</button>
+            <button class="button button1" type="button" onclick="calculateAreaSquare()">Calcular área</button>
+        </form>
+    </div>
+
+
+    <div class="triangle">
+        <h2>Triangle</h2>
+        <form>
+            <label for="InputTriangle">
+                Write how much each side of the Triangle measures:
+            </label>
+            <input id="InputTriangle" type="number">
+            <button class="button button1" type="button" onclick="calculateTrianglePerimeter()"> Perimeter</button>
+            <button class="button button1" type="button" onclick="calculateTriangleArea()">Area</button>
+        </form>
+    </div>
+    
+    
+    <div class="circle">
+        <h2>Circle</h2>
+        <form>
+            <label for="InputCircle">
+                Write the length of the radius:
+            </label>
+            <input id="InputCircle" type="number">
+            <button class="button button1" type="button" onclick="CircleP()">Perimeter</button>
+            <button class="button button1" type="button" onclick="calculateAreaCircle()">Area</button>
+        </form>
+    </div>
+    
+    
+   
+</section>
+<script src="./figures.js"></script>
+
+</body>
+</html>
