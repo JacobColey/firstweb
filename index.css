@@ -7,6 +7,7 @@ body{
 }
 section{
     display:flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
@@ -16,24 +17,82 @@ section{
     background: rgb(255, 247, 140);
     border-radius: 7px;
     width: 400px;
-    height: 200px;
+    height: 300px;
     text-align: center;
     color: black;
     box-shadow: 4px 4px  rgb(222, 216, 123);
 }
+
+.square input{
+    width: 78px;
+}
+
+.square img{
+    padding: 10px;
+    width: 85px;
+    height: 85px;
+}
+
 .triangle{
     background: rgb(255, 127, 127);
     border-radius: 7px;
     width: 400px;
-    height: 200px;
+    height: 300px;
     text-align: center;
     color: black;
 }
+
+.card2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.column1{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: center;
+}
+
+.column3{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+}
+
 .circle{
     background: rgb(127, 155, 255);
     border-radius: 7px;
     width: 400px;
-    height: 200px;
+    height: 250px;
     text-align: center;
     color: black;
+}
+
+.circle img{
+    width: 100px;
+    height: 100px;
+}
+
+.circle input{
+    width: 60px;
+}
+
+.triangle img{
+    width: 100px;
+    height: 100px;
+}
+.triangle input{
+    width: 50px;
+    padding: 2px;
+
+}
+
+@media screen and (max-width: 600px){
+    .square{width: 95%;}
+    .triangle{width: 95%;}
+    .circle{width: 95%;}
 }

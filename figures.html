@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>figures</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 <header>
@@ -19,7 +19,10 @@
             <label for="InputSquare">
                 Write the length of one of th sides of your Square:
             </label>
-            <input id="InputSquare" type="number">
+            <div>
+            <img src="./img/square.png" alt="Square">
+            </div>
+            <div><input id="InputSquare" type="number" placeholder="side"></div>
             <button class="button button1" type="button" onclick="calculatePerimeterSquare()">Calcular el perímetro</button>
             <button class="button button1" type="button" onclick="calculateAreaSquare()">Calcular área</button>
         </form>
@@ -28,13 +31,28 @@
 
     <div class="triangle">
         <h2>Triangle</h2>
-        <form>
-            <label for="InputTriangle">
+        <label for="InputTriangle">
                 Write how much each side of the Triangle measures:
-            </label>
-            <input id="InputTriangle" type="number">
-            <button class="button button1" type="button" onclick="calculateTrianglePerimeter()"> Perimeter</button>
-            <button class="button button1" type="button" onclick="calculateTriangleArea()">Area</button>
+        </label>
+    
+        <div class="card2">
+            <div class="column1"> 
+                <input id="InputTriangle1" type="number" placeholder="side1">
+            </div>
+            <div class="column">
+                <img src="../firstweb/img/triangle.png" alt="Triangle">
+                <input id="InputTriangle2" type="number" placeholder="side2">
+            </div>
+            <div class="column3">
+                <input id="InputTriangle3" type="number" placeholder="side3">
+            </div>
+                
+        </div>
+
+        <form>
+            <button class="button button1" type="button" onclick="trianglePerimeter()"> Perimeter</button>
+            <button class="button button1" type="button" onclick="triangleType()"> Type</button>
+            <button class="button button1" type="button" onclick="triangleArea()">Area</button>
         </form>
     </div>
     
@@ -45,9 +63,14 @@
             <label for="InputCircle">
                 Write the length of the radius:
             </label>
-            <input id="InputCircle" type="number">
+            <div>
+            <img src="./img/radius.png" alt="Circle">
+            </div>
+            <input id="InputCircle" type="number" placeholder="radius">
+            <div>
             <button class="button button1" type="button" onclick="CircleP()">Perimeter</button>
             <button class="button button1" type="button" onclick="calculateAreaCircle()">Area</button>
+            </div>
         </form>
     </div>
     
